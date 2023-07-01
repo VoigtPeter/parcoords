@@ -1,3 +1,5 @@
+[![PyPI version](https://badge.fury.io/py/parcoords.svg)](https://pypi.org/project/parcoords/)
+
 # Parallel Coordinates Plotting for Python `parcoords`
 
 This package implements a parallel-coordinate plot, commonly used in machine learning, i.e. for hyperparameter visualization.
