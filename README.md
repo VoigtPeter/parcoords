@@ -3,20 +3,21 @@
 This package implements a parallel-coordinate plot, commonly used in machine learning, i.e. for hyperparameter visualization.
 
 <p align="center">
-  <img alt="Example parallel-coordinate plot" src="img/example_plot.png">
+  <img alt="Example parallel-coordinate plot" src="https://raw.githubusercontent.com/VoigtPeter/parcoords/main/img/example_plot.png">
 </p>
 
 ## Installation
 The `parcoords` package can be installed with pip:
 ```
-pip install <package name>
+pip install parcoords
 ```
+You can also view the package on [PyPI](https://pypi.org/project/parcoords/).
 
 ## Usage
 The following code produces the sample plot at the beginning of this page.
 ```python
 import matplotlib.pyplot as plt
-from parcoords.parcoords import plot_parcoords
+from parcoords import plot_parcoords
 
 # let's define some data to plot
 values = [
@@ -45,4 +46,4 @@ plt.show()
 ```
 
 ## License
-This repository is licensed under the [MIT-License](./LICENSE.txt).
+This repository is licensed under the [MIT-License](https://github.com/VoigtPeter/parcoords/blob/main/LICENSE.txt).
