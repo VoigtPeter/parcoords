@@ -24,27 +24,28 @@ def plot_parcoords(
     axs: np.ndarray[plt.Axes] = None,
 ) -> tuple[plt.Figure, np.ndarray[plt.Axes]]:
     """Plotting function for parallel coordinate plots.
+
     :param values: 2-dimensional sequence or numpy-array containing
-                   row-vectors of the data to display. (required)
+        row-vectors of the data to display. (required)
     :param labels: Sequence containing the column labels. (optional)
     :param title: Title of the figure. (optional)
     :param color_field: Either the label of the column (`labels` must be provided)
-                        or the column index used as basis for the coloring. If not
-                        provided, the `color` attribute will be used. (optional)
+        or the column index used as basis for the coloring. If not
+        provided, the `color` attribute will be used. (optional)
     :param color: Color of the edges when `color_field` attribute is not provided.
-                  (default: grey)
+        (default: grey)
     :param scale: Sequence of scale types. Must be in one of the forms:
-                  [({field label/index}, {"linear", "log", ...}), ...] or
-                  [{"linear", "log", ...}, ...] or
-                  {"linear", "log", ...}.
-                  (optional, default: linear)
+        [({field label/index}, {"linear", "log", ...}), ...] or
+        [{"linear", "log", ...}, ...] or
+        {"linear", "log", ...}.
+        (optional, default: linear)
     :param figsize: Size of the figure. (optional)
     :param cmap: The colormap for the edge-colors (to be used together with
-                 `color_field`). (default: viridis)
+        `color_field`). (default: viridis)
     :param y_limits: The min- & max-limits for the axes. Must be in the form of:
-                     [(`min`, `max`), ...] for all axes. (optional)
+        [(`min`, `max`), ...] for all axes. (optional)
     :param axs: An existing axes array, to be used when adding more datapoints.
-                (optional)
+        (optional)
     :return: The figure object and the axes (as ndarray).
     """
     # transpose row-vector to column-vector
