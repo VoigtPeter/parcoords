@@ -1,4 +1,6 @@
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/VoigtPeter/parcoords/main-ci.yml)
 [![PyPI version](https://badge.fury.io/py/parcoords.svg)](https://pypi.org/project/parcoords/)
+[![Documentation](https://img.shields.io/badge/docs-passing-default)](https://voigtpeter.github.io/parcoords/index.html)
 
 # Parallel Coordinates Plotting for Python `parcoords`
 
