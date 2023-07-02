@@ -1,4 +1,5 @@
-from typing import Union, Sequence
+from __future__ import annotations
+from typing import Union, Sequence, Tuple
 
 import numpy as np
 
@@ -14,15 +15,15 @@ def plot_parcoords(
     color_field: Union[str, int] = None,
     color="grey",
     scale: Union[
-        Sequence[tuple[Union[str, int], Union[str, ScaleBase]]],
+        Sequence[Tuple[Union[str, int], Union[str, ScaleBase]]],
         Sequence[Union[str, ScaleBase]],
         str,
     ] = None,
-    figsize: tuple[int, int] = None,
+    figsize: Tuple[int, int] = None,
     cmap=plt.cm.viridis,
     y_limits: Union[Sequence, np.ndarray] = None,
     axs: np.ndarray[plt.Axes] = None,
-) -> tuple[plt.Figure, np.ndarray[plt.Axes]]:
+) -> Tuple[plt.Figure, np.ndarray[plt.Axes]]:
     """Plotting function for parallel coordinate plots.
 
     :param values: 2-dimensional sequence or numpy-array containing
