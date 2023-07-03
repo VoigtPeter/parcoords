@@ -79,6 +79,15 @@ def plot_parcoords(
         if y_limits is None:
             y_limits = ylims
     else:
+        for i, (column, ax) in enumerate(zip(values, axs)):
+            if not all(isinstance(item, (int, float)) for item in column):
+                for x, value in enumerate(column):
+                    if isinstance(value, str):
+                        column[x] = {
+                            text.get_text(): i
+                            for i, text in enumerate(ax.get_yticklabels())
+                        }[value]
+                values[i] = column
         if y_limits is not None:
             print(
                 "Warning: setting `y_limits` when using existing axes has no effect."
@@ -190,6 +199,7 @@ def plot_parcoords(
     if fig:
         fig.subplots_adjust(wspace=0)
         fig.subplots_adjust(top=0.85)
-        fig.suptitle(title)
+        if title is not None:
+            fig.suptitle(title)
 
     return fig, axs

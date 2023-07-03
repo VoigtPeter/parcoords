@@ -6,4 +6,8 @@ doc/_source/
 *.egg-info
 *.iml
 .idea
-
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+tests/result_images/

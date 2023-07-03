@@ -7,6 +7,10 @@ setuptools.setup(
     version="0.1.3",
     author="Peter Voigt",
     url="https://github.com/VoigtPeter/parcoords",
+    project_urls={
+        "Documentation": "https://voigtpeter.github.io/parcoords/index.html",
+        "Source": "https://github.com/VoigtPeter/parcoords",
+    },
     packages=["parcoords"],
     license="MIT",
     description="Parallel coordinates plotting",
