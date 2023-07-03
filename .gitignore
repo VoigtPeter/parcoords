@@ -11,3 +11,4 @@ doc/_source/
 coverage.xml
 htmlcov/
 tests/result_images/
+result_images/

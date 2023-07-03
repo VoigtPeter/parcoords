@@ -25,8 +25,6 @@ def test_simple_parcoords_plot():
     # act
     plot_parcoords(
         values,
-        labels=["lr", "# epochs", "sampling method", "accuracy"],
-        color_field="accuracy",
-        scale=[("lr", "log")],
-        title="Parallel-Coordinates of the Hyperparameters",
+        color_field=-1,
+        scale=[(0, "log")],
     )
