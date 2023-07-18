@@ -4,7 +4,7 @@ import setuptools
 
 setuptools.setup(
     name="parcoords",
-    version="0.1.3",
+    version="0.1.4",
     author="Peter Voigt",
     url="https://github.com/VoigtPeter/parcoords",
     project_urls={

@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.abspath(".."))
 project = "parcoords"
 copyright = "2023, Peter Voigt"
 author = "Peter Voigt"
-release = "0.1.2"
+release = "0.1.4"
 html_title = f"{project} ({release})"
 
 # -- General configuration ---------------------------------------------------
