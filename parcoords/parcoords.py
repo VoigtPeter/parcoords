@@ -62,6 +62,7 @@ def plot_parcoords(
             no_of_cols - 1,
             figsize=figsize,
             sharey="none",
+            gridspec_kw=dict(wspace=0),
         )
         axs = np.append(axs, axs[-1].twinx())
 
